@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,97 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+          what is node.js?
+        </section>
+
+        <section>
+          simply put; node.js is a javascript interpreter
+        </section>
+
+        <section>
+          node.js = <br>
+          v8 (javascript engine) + event loop + I/O API
+        </section>
+
+        <section>
+          v8 is Chrome's javascript compiler
+        </section>
+
+        <section>
+          an event loop is a circular queue that dispatches messages
+        </section>
+
+        <section>
+          node.js using its I/O API <br>can read and write files on the filesystem
+        </section>
+
+        <section>
+          node.js inherits javascript's asynchronous nature
+        </section>
+
+        <section>
+          <pre><code>fs.readFile('start.html', function (err, data) {
+  console.log('flag 1');
+  if (!err) {
+    console.log('file contents:', data);
+  } else {
+    console.log('error:', err);
+  }
+});
+
+console.log('flag 2');
+</code></pre>
+        </section>
+
+        <section>
+          <pre><code>var handlerFunction = function (err, data) {
+  console.log('flag 1');
+  if (!err) {
+    console.log('file contents:', data);
+  } else {
+    console.log('error:', err);
+  }
+}
+
+fs.readFile('start.html', handlerFunction);
+
+console.log('flag 2');
+</code></pre>
+        </section>
+
+        <section>
+          node.js is mainly used for backend web development
+        </section>
+
+        <section>
+          npm (node.js package manager) is the most used package manager for javascript libraries
+          and has become a major player on frontend web development
+        </section>
+
+        <section>
+          since node.js executes code, it can do anything code can do
+          <br>
+          from web dev to desktop applications and command line utilities
+
+          <!-- <blockquote cite="https://blog.codinghorror.com/the-principle-of-least-power/">
+            Atwood's Law: any application that can be written in JavaScript, will eventually be written in JavaScript.
+          </blockquote> -->
+        </section>
+
+        <section>
+          <a href="https://nodejs.org/">nodejs.org</a> # official website
+          <br>
+          <a href="https://nodeschool.io/">nodeschool.io</a> # tutorials for node
+          <br>
+          <a href="https://github.com/getify/You-Dont-Know-JS">You Don't Know JS</a> # book on JS
+          <br>
+          <a href="https://www.codeschool.com/courses/real-time-web-with-node-js">Real-time Web with Node.js</a> # full 6-8 hour course
+        </section>
+
+        <section>
+          thank you!
+        </section>
 			</div>
 		</div>
 
