@@ -4,7 +4,7 @@
 
 Created using [reveal.js](https://github.com/hakimel/reveal.js/).
 
-`npm insall` to install dependencies.
+`npm install` to install dependencies.
 
 `npm run start` to run the server locally.
 
